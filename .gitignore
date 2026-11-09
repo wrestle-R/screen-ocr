@@ -1,0 +1,10 @@
+/local-docs/
+__pycache__/
+*.pyc
+.venv/
+venv/
+models/
+.env
+.env.*
+!.env.example
+/captures/
