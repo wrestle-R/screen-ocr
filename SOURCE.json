@@ -47,5 +47,6 @@
     "setup.py": "3caf1a337b1638fead8f04a8f756c2832319349f415ae9df517755cb26333320",
     "test_ocr.py": "fade25e3b6a4ed8d5507064a436b7755813e846b98d180ea9a4848b16a09c4f3"
   },
-  "notes": "Runtime, tests, model manifest and checked end-4 integration preserved from the committed source. README and desktop guide written for this standalone distribution."
+  "notes": "Runtime, tests, model manifest and checked end-4 integration preserved from the committed source. README and desktop guide written for this standalone distribution. Runtime/model/integration hashes rechecked against the completed desktop source; no OCR changes required.",
+  "verified_against_commit": "6a3738a76feb748416cbde07ff7e17b0cd919be6"
 }
