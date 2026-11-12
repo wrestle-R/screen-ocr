@@ -2,7 +2,7 @@
 
 **Arch Linux + Hyprland only.** I think this is a godsend when I'm developing, I can just select text on my screen and copy paste it quickly instead of typing it all out.
 
-![Selecting text with the desktop capture tool over Spotify TUI](docs/selection-example.jpg)
+![Selecting text with the desktop capture tool over Spotify TUI](docs/selection-example.png)
 
 Select the text and it copies to your clipboard. It runs locally using PP-OCRv5 mobile detection and English recognition models.
 
