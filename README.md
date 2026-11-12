@@ -1,6 +1,10 @@
 # Screen OCR
 
-Select some text on screen and copy it. Runs locally, uses English OCR, and exits when it is done. You can use the tool on its own or connect it to the desktop OCR action.
+I think this is a godsend when I'm developing. I can just select text on my screen and copy paste it quickly instead of typing it all out.
+
+![A synthetic code screenshot used to test Screen OCR](samples/native-dark-code-14.png)
+
+This is one of the synthetic screenshots used to test recognition. Screen OCR runs locally and copies the recognised text to your clipboard.
 
 **Supported platform: Arch Linux + Hyprland only.** Other distributions, compositors and operating systems are outside this repo's supported setup. The end-4 integration additionally needs its matching QuickShell ii / Lua Hyprland configuration.
 
@@ -8,7 +12,7 @@ Select some text on screen and copy it. Runs locally, uses English OCR, and exit
 
 - Standalone region selection with slurp + grim, or OCR from an existing image.
 - Clipboard output by default, with plain-text stdout and JSON modes for scripts.
-- English PP-OCRv5 mobile recognition through RapidOCR 3.10.0 / CPU ONNX Runtime 1.31.1.
+- PP-OCRv5 mobile detector (`ch_PP-OCRv5_det_mobile`) and English mobile recognizer (`en_PP-OCRv5_rec_mobile`), using RapidOCR 3.10.0 and CPU ONNX Runtime 1.31.1.
 - Pinned Python dependencies and verified local model downloads. Captures run offline after setup; no hosted OCR service or API key.
 - Optional checked end-4 integration using the existing region selector and Super+Shift+X.
 
