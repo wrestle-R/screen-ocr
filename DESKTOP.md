@@ -4,7 +4,7 @@
 
 ## A standalone Hyprland shortcut
 
-Finish README setup and test `./screen-ocr --select` first. Keep the repo in a stable location and optionally create the documented `~/.local/bin/screen-ocr` symlink.
+Finish [setup](README.md#install) and test `./screen-ocr --select` first. Keep the repo in a stable location and optionally create the `~/.local/bin/screen-ocr` symlink described in the [guide](GUIDE.md).
 
 Inspect existing shortcuts with `hyprctl binds` before choosing a free chord. On a conventional `hyprland.conf` configuration, a custom binding can look like:
 

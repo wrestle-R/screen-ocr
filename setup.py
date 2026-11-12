@@ -13,8 +13,10 @@ HERE=Path(__file__).resolve().parent
 DEFAULT=Path.home()/'.local/share/rdp-screen-ocr'
 
 def main():
-    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--data-dir',type=Path,default=DEFAULT);args=parser.parse_args()
-    directory=args.data_dir;directory.mkdir(parents=True,exist_ok=True,mode=0o700)
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.parse_args()
+    # The launcher and desktop integration both use this shared location.
+    directory=DEFAULT;directory.mkdir(parents=True,exist_ok=True,mode=0o700)
     python=directory/'venv/bin/python'
     if not python.exists():subprocess.run(['uv','venv','--python','3.12',str(directory/'venv')],check=True)
     subprocess.run(['uv','pip','install','--python',str(python),'-r',str(HERE/('requirements.lock' if (HERE/'requirements.lock').exists() else 'requirements.txt'))],check=True)
